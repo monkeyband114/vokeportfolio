@@ -5,7 +5,6 @@ import {
   Contact,
   Education,
   Footer,
-  Header,
   Map,
   Portfolio,
   Priceplans,
@@ -13,17 +12,19 @@ import {
   Workhistory,
 } from "./components";
 
+import { Hero, Navbar, About } from "./components/childcomponents";
 import styles from "./style";
 
-import useDarkmode from "./hooks/useDarkmode";
-
 const App = () => {
-  // useDarkmode();
   return (
     <div className="bg-primary dark:bg-fullBlack dark:text-white  w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Header />
+          <section className="grid__layout">
+            <About />
+            <Hero />
+            <Navbar />
+          </section>
         </div>
       </div>
     </div>

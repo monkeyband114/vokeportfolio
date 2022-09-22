@@ -8,7 +8,7 @@ module.exports = {
         primary: "#F0F0F6",
         secondary: "rgba(255, 180, 0, 0.95)",
         halfBlack: "#2B2B2B",
-        darken: "#3A3B3C",
+        darken: "#2B2B2B",
         fullBlack: "#242526",
         brightyellow: "#FFB400",
         greyWhite: "#E4E6EB",

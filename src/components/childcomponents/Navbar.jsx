@@ -10,12 +10,29 @@ import {
   contrasticon,
 } from "../../assets/icons";
 
+import useDarkmode from "../../hooks/useDarkmode";
+
+export const Item = ({ href, img }) => (
+  <>
+    <a href={href}>
+      <li className="hover:bg-brightyellow dark:hover:bg-brightyellow dark:bg-slate-500 items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
+        <img src={img} alt={`${img}`} className="cursor-pointer p-1.5" />
+      </li>
+    </a>
+  </>
+);
+
 const Navbar = () => {
+  const [colorTheme, setTheme] = useDarkmode();
+
   return (
     <div
       className={`${styles.paddingY} bg-white dark:bg-darken hidden md:flex sm:flex-col w-full`}
     >
-      <div className="p-2 items-center justify-center mb-[140px]">
+      <div
+        onClick={() => setTheme(colorTheme)}
+        className="p-2 items-center justify-center mb-[140px] cursor-pointer"
+      >
         <img
           src={contrasticon}
           alt="contrasticon"
@@ -24,56 +41,11 @@ const Navbar = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <ul className="flex flex-col p-2 justify-between items-center h-[500px]">
-          <a href="#home">
-            <li className="hover:bg-brightyellow items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
-              <img
-                src={homeicon}
-                alt="homeicon"
-                className="cursor-pointer p-1.5"
-              />
-            </li>
-          </a>
-          <a href="#service">
-            <li className="hover:bg-brightyellow items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
-              <img
-                src={codeicon}
-                alt="codeicon"
-                className="cursor-pointer p-1.5"
-              />
-            </li>
-          </a>
-          <a href="#tools">
-            <li className="hover:bg-brightyellow items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
-              <img
-                src={toolsicon}
-                alt="toolsicon"
-                className="cursor-pointer p-1.5"
-              />
-            </li>
-          </a>
-          <a href="#edu">
-            <li className="hover:bg-brightyellow items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
-              <img
-                src={bookicon}
-                alt="bookicon"
-                className="cursor-pointer p-1.5"
-              />
-            </li>
-          </a>
-          <a href="#blog">
-            <li className="hover:bg-brightyellow items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
-              <img src={pen} alt="pen" className="cursor-pointer p-1.5" />
-            </li>
-          </a>
-          <a href="#map">
-            <li className="hover:bg-brightyellow items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
-              <img
-                src={project}
-                alt="project"
-                className="cursor-pointer p-1.5"
-              />
-            </li>
-          </a>
+          <Item href="#home" img={homeicon} />
+          <Item href="#service" img={codeicon} />
+          <Item href="#tools" img={toolsicon} />
+          <Item href="#blog" img={pen} />
+          <Item href="#contact" img={bookicon} />
         </ul>
       </div>
     </div>

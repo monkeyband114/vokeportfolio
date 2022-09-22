@@ -1,14 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { arrrowright, contrasticon, menu, close } from "../../assets/icons";
 import { michael } from "../../assets";
+import useDarkmode from "../../hooks/useDarkmode";
 
 const Home = () => {
   const [toggle, settoggle] = useState(false);
 
+  const [colorTheme, setTheme] = useDarkmode();
+
   return (
     <section className="py-3">
       <nav className="flex md:hidden  flex-row justify-end">
-        <div className="mr-2">
+        <div
+          onClick={() => setTheme(colorTheme)}
+          className="mr-2 cursor-pointer shadow-lg"
+        >
           <img src={contrasticon} alt="contrasticon" />
         </div>
         <div>
@@ -22,7 +28,7 @@ const Home = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } bg-primary dark:bg-fullblack absolute top-[3rem] right-2 mx-4 border border-brightyellow my-2 min-w-[140px] rounded-xl animate__menu`}
+          } bg-primary dark:bg-fullBlack absolute top-[3rem] right-2 mx-4 border border-brightyellow my-2 min-w-[140px] rounded-xl animate__menu`}
         >
           <ul className="list-none flex-col justify-end items-center flex-1">
             <li className="font-inter font-normal cursor-pointer text-center text-[16px] mt-2 mb-2">
@@ -46,7 +52,7 @@ const Home = () => {
           </ul>
         </div>
       </nav>
-      <div className="flex flex-row justify-between">
+      <div className="flex sm:flex-row flex-col-reverse justify-between">
         <div className="flex flex-col justify-between py-6">
           <h1 className="font-inter font-bold text-[36px] leading-[123.6%]">
             I’m Michael Adawaren <br className="sm:block hidden" />
