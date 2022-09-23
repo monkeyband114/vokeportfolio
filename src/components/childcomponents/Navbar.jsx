@@ -16,7 +16,7 @@ export const Item = ({ href, img }) => (
   <>
     <a href={href}>
       <li className="hover:bg-brightyellow dark:hover:bg-brightyellow dark:bg-slate-500 items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
-        <img src={img} alt={`${img}`} className="cursor-pointer p-1.5" />
+        <img src={img} alt={`${href}`} className="cursor-pointer p-1.5" />
       </li>
     </a>
   </>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <img
           src={contrasticon}
           alt="contrasticon"
-          className="md:pl-6 pl-0 cursor-pointer"
+          className="md:ml-6 pl-0 cursor-pointer bg-white rounded-full p-0"
         />
       </div>
       <div className="flex flex-col justify-center items-center">

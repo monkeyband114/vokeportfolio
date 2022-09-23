@@ -25,6 +25,7 @@ const Home = () => {
             onClick={() => settoggle((prev) => !prev)}
           />
         </div>
+        {/* toggle menu */}
         <div
           className={`${
             toggle ? "flex" : "hidden"
