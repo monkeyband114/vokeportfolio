@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${styles.paddingY} bg-white dark:bg-darken hidden md:flex sm:flex-col w-full`}
+      className={`${styles.paddingY} bg-white h-[1150px] dark:bg-darken hidden md:flex sm:flex-col w-full`}
     >
       <div
         onClick={() => setTheme(colorTheme)}

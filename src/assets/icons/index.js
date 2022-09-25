@@ -27,9 +27,11 @@ import hover from "./hover.svg";
 import project from "./project.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
+import azure from "./azure.svg";
 
 export {
   hover,
+  azure,
   close,
   menu,
   project,

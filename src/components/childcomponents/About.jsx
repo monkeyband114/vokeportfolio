@@ -25,7 +25,7 @@ export const Level = ({ text, percent }) => (
 
 const About = () => (
   <div
-    className={`${layout.section} hidden md:flex bg-white dark:bg-darken justify-center px-6`}
+    className={`${layout.section} hidden  bg-white h-[1150px] dark:bg-darken  px-6`}
   >
     <div className="flex flex-col items-center">
       <img

@@ -29,8 +29,8 @@ const Hero = () => {
         <Education />
         <Workhistory />
         <Portfolio />
-        <Blog />
         <Contact />
+        <Blog />
         <Map />
         <Footer />
       </div>
