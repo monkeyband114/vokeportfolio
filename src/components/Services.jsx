@@ -1,9 +1,10 @@
 import React from "react";
 import { uiux, arduino, react, playgroundapps, monitor } from "../assets";
 import { azure } from "../assets/icons";
+import { Link } from "react-router-dom";
 
 export const Card = ({ icon, head, para }) => (
-  <a href="#">
+  <Link to={"/projects/" + head}>
     <div className="transform transition hover:scale-110 duration-500 items-center flex flex-col bg-white dark:bg-darken sm:mb-0 mb-6  justify-center shadow-lg text-center py-8 px-12">
       <div className="object-contain w-[65px] h-[53px] mb-4">
         <img src={icon} alt={head} className="w-[65px] h-[53px]" />
@@ -17,7 +18,7 @@ export const Card = ({ icon, head, para }) => (
         </p>
       </div>
     </div>
-  </a>
+  </Link>
 );
 
 const Services = () => {
@@ -34,16 +35,41 @@ const Services = () => {
         </p>
       </div>
       <div className="grid sm:grid-cols-3 grid-col-1 gap-4 mx-0">
-        <Card icon={monitor} head="Web Development" para="Blog, E commerce" />
-        <Card icon={arduino} head="Embedded Code" para="IOT, Hardware" />
+        <Card
+          icon={monitor}
+          head="Web Development"
+          para="Blog, E commerce"
+          name="web"
+        />
+        <Card
+          icon={arduino}
+          head="Embedded Code"
+          para="IOT, Hardware"
+          name="embed"
+        />
         <Card
           icon={playgroundapps}
           head="Playground Apps"
           para="Chatbots, Packages"
         />
-        <Card icon={react} head="React WebApps" para="PicsMaster, peble" />
-        <Card icon={uiux} head="Python Design" para="RampLage, bluecurosawa" />
-        <Card icon={azure} head="AI Models" para="Sales, E commerce" />
+        <Card
+          icon={react}
+          head="React WebApps"
+          para="PicsMaster, peble"
+          name="react"
+        />
+        <Card
+          icon={uiux}
+          head="Python Design"
+          para="RampLage, bluecurosawa"
+          name="python"
+        />
+        <Card
+          icon={azure}
+          head="AI Models"
+          para="Sales, E commerce"
+          name="ai"
+        />
       </div>
     </section>
   );

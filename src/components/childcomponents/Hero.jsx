@@ -2,13 +2,10 @@ import React from "react";
 import styles, { layout } from "../../style";
 import Home from "./Home";
 import {
-  Blog,
   Services,
   Contact,
   Education,
   Footer,
-  Map,
-  Portfolio,
   Priceplans,
   Recomendations,
   Workhistory,
@@ -28,10 +25,7 @@ const Hero = () => {
         <Recomendations />
         <Education />
         <Workhistory />
-        <Portfolio />
         <Contact />
-        <Blog />
-        <Map />
         <Footer />
       </div>
     </div>
