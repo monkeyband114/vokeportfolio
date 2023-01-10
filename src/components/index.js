@@ -8,10 +8,11 @@ import Portfolio from "./Portfolio";
 import Priceplans from "./Priceplans";
 import Recomendations from "./Recomendations";
 import Workhistory from "./Workhistory";
-
+import Top from "./Top"
 export {
   Blog,
   Services,
+  Top,
   Contact,
   Education,
   Footer,
