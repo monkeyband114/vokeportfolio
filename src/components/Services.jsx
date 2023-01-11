@@ -3,8 +3,8 @@ import { uiux, arduino, react, playgroundapps, monitor } from "../assets";
 import { azure } from "../assets/icons";
 import { Link } from "react-router-dom";
 
-export const Card = ({ icon, head, para }) => (
-  <Link to={"/projects/" + head}>
+export const Card = ({ icon, head, para, name }) => (
+  <Link to={"/projects/" + name} state={{ from: { name } }}>
     <div className="transform transition hover:scale-110 duration-500 items-center flex flex-col bg-white dark:bg-darken sm:mb-0 mb-6  justify-center shadow-lg text-center py-8 px-12">
       <div className="object-contain w-[65px] h-[53px] mb-4">
         <img src={icon} alt={head} className="w-[65px] h-[53px]" />
