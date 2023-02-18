@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
-import Category from "./Category";
+
 import Project from "./Project";
 
 const Projects = () => {
