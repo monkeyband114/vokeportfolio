@@ -55,7 +55,6 @@ const Home2 = () => {
       </nav>
       <div className="my-3 text-black dark:text-white">
         <div className="text-center text-4xl">My Projects</div>
-        <Project />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-
+// import "./App.css";
 import { Top } from "./components";
 import { Route, Routes } from "react-router-dom";
 import Projects from "./components/Projects/Projects";

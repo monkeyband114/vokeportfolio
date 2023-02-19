@@ -182,3 +182,28 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* prtfolio tab */
+.tab-content {
+  display: none;
+}
+
+.tab-content.current {
+  display: block;
+}
+
+.customer-service-tabs .tabs li.current span:before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.customer-service-tabs.style-two .tabs li.current span {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.customer-service-tabs.style-two .tabs li.current span::before {
+  opacity: 1;
+  visibility: visible;
+}
