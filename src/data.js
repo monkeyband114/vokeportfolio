@@ -1,9 +1,24 @@
+import {
+  step,
+  mitter,
+  keycard,
+  robot,
+  promanage,
+  vote,
+  facesite,
+  estate,
+  ecomm,
+  dinstack,
+  blog,
+  socichat,
+} from "../src/assets/projects";
+
 export const data = [
   {
     id: "001",
-    name: "",
-    note: "",
-    image: null,
+    name: "School Management App",
+    note: "Django School management App",
+    image: step,
     link: "",
     description: "",
     type: "",
@@ -99,7 +114,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "011",
     name: "",
     note: "",
     image: null,
@@ -108,7 +123,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "012",
     name: "",
     note: "",
     image: null,
@@ -117,7 +132,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "013",
     name: "",
     note: "",
     image: null,
@@ -126,7 +141,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "013",
     name: "",
     note: "",
     image: null,
@@ -135,7 +150,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "014",
     name: "",
     note: "",
     image: null,
@@ -144,7 +159,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "015",
     name: "",
     note: "",
     image: null,
@@ -153,7 +168,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "016",
     name: "",
     note: "",
     image: null,
@@ -162,7 +177,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "017",
     name: "",
     note: "",
     image: null,
@@ -171,7 +186,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "018",
     name: "",
     note: "",
     image: null,
@@ -180,7 +195,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
+    id: "019",
     name: "",
     note: "",
     image: null,
@@ -189,34 +204,7 @@ export const data = [
     type: "",
   },
   {
-    id: "",
-    name: "",
-    note: "",
-    image: null,
-    link: "",
-    description: "",
-    type: "",
-  },
-  {
-    id: "",
-    name: "",
-    note: "",
-    image: null,
-    link: "",
-    description: "",
-    type: "",
-  },
-  {
-    id: "",
-    name: "",
-    note: "",
-    image: null,
-    link: "",
-    description: "",
-    type: "",
-  },
-  {
-    id: "",
+    id: "020",
     name: "",
     note: "",
     image: null,
