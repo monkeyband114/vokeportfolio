@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import { arrrowright, contrasticon, menu, close } from "../../assets/icons";
 import { michael } from "../../assets";
 import useDarkmode from "../../hooks/useDarkmode";
-import Project from "../Projects/Project";
+// import Project from "../Projects/Project";
 const Home2 = () => {
   const [toggle, settoggle] = useState(false);
-
   const [colorTheme, setTheme] = useDarkmode();
 
   return (

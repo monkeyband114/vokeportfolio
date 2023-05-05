@@ -11,14 +11,15 @@ import {
 } from "../../assets/icons";
 
 import useDarkmode from "../../hooks/useDarkmode";
+import { Link } from "react-router-dom";
 
 export const Item = ({ href, img }) => (
   <>
-    <a href={href}>
+    <Link to={href}>
       <li className="hover:bg-brightyellow dark:hover:bg-brightyellow dark:bg-slate-500 items-center rounded-full w-[40px] h-[40px] p-1.5 mx-3">
         <img src={img} alt={`${href}`} className="cursor-pointer p-1.5" />
       </li>
-    </a>
+    </Link>
   </>
 );
 
@@ -42,7 +43,7 @@ const Navbar = () => {
       <div className="flex flex-col justify-center items-center">
         <ul className="flex flex-col p-2 justify-between items-center h-[500px]">
           <Item href="#home" img={homeicon} />
-          <Item href="#service" img={codeicon} />
+          <Item href="projects" img={codeicon} />
           <Item href="#tools" img={toolsicon} />
           <Item href="#blog" img={pen} />
           <Item href="#contact" img={bookicon} />

@@ -2,7 +2,10 @@ import React from "react";
 import styles, { layout } from "../../style";
 import Home2 from "./Home2";
 import Category from "../Projects/Category";
-const Hero2 = () => {
+import Project from "../Projects/Project";
+
+const Hero2 = ({ from }) => {
+  console.log(from.state);
   return (
     <div className="justify-center">
       <div
@@ -11,7 +14,7 @@ const Hero2 = () => {
         <Home2 />
       </div>
       <div className={`${layout.section}`}>
-        <Category />
+        {from.state == null ? <Category /> : <Project from={from} />}
       </div>
     </div>
   );

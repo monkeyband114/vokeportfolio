@@ -30,8 +30,8 @@ const Services = () => {
       <div className="flex flex-col items-center justify-center mb-4">
         <h2 className="font-semibold font-inter text-[32px]">My Services</h2>
         <p className="font-normal font-inter text-gray-500 text-[15px] leading-[24px] max-w-[436px] text-center">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+          All Services Managed by, you can find intresting be sure to cheak it
+          out
         </p>
       </div>
       <div className="grid sm:grid-cols-3 grid-col-1 gap-4 mx-0">
@@ -39,36 +39,37 @@ const Services = () => {
           icon={monitor}
           head="Web Development"
           para="Blog, E commerce"
-          name="web"
+          name="Web"
         />
         <Card
           icon={arduino}
           head="Embedded Code"
           para="IOT, Hardware"
-          name="embed"
+          name="Embedded"
         />
         <Card
           icon={playgroundapps}
           head="Playground Apps"
           para="Chatbots, Packages"
+          name="Data Science"
         />
         <Card
           icon={react}
           head="React WebApps"
           para="PicsMaster, peble"
-          name="react"
+          name="Frontend"
         />
         <Card
           icon={uiux}
           head="Python Design"
           para="RampLage, bluecurosawa"
-          name="python"
+          name="Banckend"
         />
         <Card
           icon={azure}
           head="AI Models"
           para="Sales, E commerce"
-          name="ai"
+          name="AI"
         />
       </div>
     </section>
